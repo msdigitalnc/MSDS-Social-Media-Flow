@@ -1,0 +1,29 @@
+<title>Front Office Card</title>
+<style>
+:root{--brand:#2D2B8F;--deep:#1E1C6E;--tint:#EEEEF7;--white:#FFFFFF;color-scheme:light}
+body{background:var(--tint);font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--deep)}
+.art{position:relative;width:100%;max-width:1080px;margin:0 auto;aspect-ratio:1;container-type:inline-size;overflow:hidden;background:var(--brand)}
+.card{position:absolute;left:8cqw;right:8cqw;top:10cqw;bottom:10cqw;background:var(--white);border-radius:2.2cqw;box-shadow:0 2cqw 4cqw rgba(0,0,0,.25);padding:6cqw 6cqw 5cqw;display:flex;flex-direction:column;min-width:0}
+.eyebrow{font-size:2.3cqw;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--brand)}
+h1{margin-top:1.4cqw;font-size:5cqw;line-height:1.12;font-weight:700;text-wrap:balance;max-width:66cqw}
+.rule{height:.3cqw;background:var(--brand);margin-top:3cqw;opacity:.35}
+.roles{margin-top:3cqw;display:grid;grid-template-rows:repeat(5,auto);gap:2.4cqw;min-height:0}
+.role b{display:block;font-size:2.8cqw;font-weight:700;color:var(--brand);line-height:1.2}
+.role span{display:block;font-size:2.1cqw;line-height:1.35;margin-top:.4cqw;min-width:0}
+.logo{position:absolute;right:6cqw;top:6cqw;width:13cqw;height:auto}
+</style>
+<div class="art" role="img" aria-label="Front Office / Customer Experience: five website roles">
+  <div class="card">
+    <img class="logo" src="msds-logo.png" alt="MS Digital Solutions">
+    <div class="eyebrow">The website roles series</div>
+    <h1>Front Office / Customer Experience</h1>
+    <div class="rule"></div>
+    <div class="roles">
+      <div class="role"><b>Receptionist</b><span>Welcomes visitors and directs them to the right information instantly.</span></div>
+      <div class="role"><b>Appointment Coordinator</b><span>Manages your schedule and confirms bookings without the back-and-forth.</span></div>
+      <div class="role"><b>Customer Service Representative</b><span>Provides 24/7 answers so customers don't have to wait on hold.</span></div>
+      <div class="role"><b>Communications Coordinator</b><span>Keeps everyone informed with news, alerts, and policy updates.</span></div>
+      <div class="role"><b>Event Coordinator</b><span>Handles registration and logistics for workshops or community promotions.</span></div>
+    </div>
+  </div>
+</div>
