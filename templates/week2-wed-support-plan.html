@@ -1,0 +1,58 @@
+<title>Support Plan Graphic</title>
+<style>
+:root{--brand:#2D2B8F;--deep:#1E1C6E;--tint:#EEEEF7;--white:#FFFFFF;color-scheme:light}
+body{background:var(--tint);font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--white)}
+.art{position:relative;width:100%;max-width:1200px;margin:0 auto;aspect-ratio:1200/900;container-type:inline-size;overflow:hidden;background-color:var(--deep);background-image:url(wed-bg.jpg);background-size:cover;background-position:70% 50%}
+.art::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(30,28,110,.96) 0%,rgba(45,43,143,.9) 42%,rgba(45,43,143,.78) 100%)}
+.head{position:absolute;z-index:1;left:6cqw;right:6cqw;top:6cqw}
+.eyebrow{font-size:2.2cqw;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--tint)}
+h1{margin-top:1.6cqw;font-size:5cqw;line-height:1.12;font-weight:700;text-wrap:balance}
+.cards{position:absolute;z-index:1;left:6cqw;right:6cqw;top:20cqw;bottom:12cqw;display:grid;grid-template-columns:1fr 1fr;gap:3cqw}
+.card{border-radius:1.6cqw;padding:3.2cqw;display:flex;flex-direction:column;min-width:0}
+.existing{background:var(--white);color:var(--deep)}
+.new{background:rgba(30,28,110,.55);color:var(--white);border:.3cqw solid var(--white)}
+.label{font-size:3.4cqw;font-weight:700}
+.sub{font-size:2cqw;letter-spacing:.1em;text-transform:uppercase;margin-top:.8cqw;opacity:.85}
+ul{list-style:none;margin-top:2.2cqw;display:grid;gap:1.3cqw}
+li{font-size:2.15cqw;line-height:1.28;display:flex;gap:1.4cqw;min-width:0}
+li::before{content:"";flex:0 0 1.1cqw;height:1.1cqw;margin-top:.8cqw;border-radius:50%;background:currentColor}
+.base{position:absolute;z-index:1;left:0;right:0;bottom:0;height:8cqw;background:var(--brand)}
+.foot{position:absolute;z-index:2;left:6cqw;right:6cqw;bottom:1.2cqw;height:5.6cqw;display:flex;align-items:center;justify-content:space-between;gap:3cqw}
+.cta{background:var(--white);color:var(--deep);border-radius:99cqw;padding:1cqw 3cqw;font-size:2.4cqw;font-weight:700;white-space:nowrap}
+.ask{font-size:2.2cqw;font-weight:600;min-width:0;color:var(--white)}
+.logo{width:8.4cqw;height:auto;flex:0 0 auto}
+</style>
+<div class="art" role="img" aria-label="What your support plan covers. Existing work is covered. New work is scoped separately.">
+  <div class="head">
+    <div class="eyebrow">Support and maintenance</div>
+    <h1>What your support plan covers</h1>
+  </div>
+  <div class="cards">
+    <div class="card existing">
+      <div class="label">Existing</div>
+      <div class="sub">Covered by your plan</div>
+      <ul>
+        <li>Content edits to existing pages and posts</li>
+        <li>Settings changes to existing plugins and forms</li>
+        <li>New pages on existing templates</li>
+        <li>Management of existing integrations</li>
+      </ul>
+    </div>
+    <div class="card new">
+      <div class="label">New</div>
+      <div class="sub">Scoped separately</div>
+      <ul>
+        <li>New page templates and layouts</li>
+        <li>New plugin installations</li>
+        <li>New integrations</li>
+        <li>Custom code</li>
+      </ul>
+    </div>
+  </div>
+  <div class="base"></div>
+  <div class="foot">
+    <div class="ask">Not sure which side your request falls on?</div>
+    <div class="cta">Ask Us</div>
+    <img class="logo" src="msds-logo.png" alt="MS Digital Solutions">
+  </div>
+</div>
