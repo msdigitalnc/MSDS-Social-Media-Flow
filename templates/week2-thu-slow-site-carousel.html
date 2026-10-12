@@ -1,0 +1,64 @@
+<title>Slow Site Carousel</title>
+<style>
+:root{--brand:#2D2B8F;--deep:#1E1C6E;--tint:#EEEEF7;--white:#FFFFFF;color-scheme:light}
+body{background:var(--tint);font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--white);margin:0}
+.track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;max-width:1080px;margin:0 auto}
+.slide{position:relative;flex:0 0 min(100%,480px);aspect-ratio:4/5;container-type:inline-size;overflow:hidden;scroll-snap-align:start;background-color:var(--deep);background-size:cover;background-position:center;color:var(--white)}
+.slide::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(30,28,110,.92) 0%,rgba(45,43,143,.84) 60%,rgba(30,28,110,.94) 100%)}
+.s1{background-image:url(thu-1.jpg)}
+.s2{background-image:url(thu-2.jpg)}
+.s3{background-image:url(thu-3.png)}
+.s4{background-image:url(thu-4.jpg)}
+.slide.plain{background:var(--brand)}
+.slide.plain::before{display:none}
+.inner{position:absolute;z-index:1;left:9cqw;right:9cqw;top:10cqw}
+.eyebrow{font-size:3.4cqw;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--tint)}
+h2{margin-top:4cqw;font-size:9.4cqw;line-height:1.08;font-weight:700;text-wrap:balance}
+p{margin-top:5cqw;font-size:4.2cqw;line-height:1.45;max-width:94%}
+.foot{position:absolute;z-index:1;left:9cqw;right:9cqw;bottom:9cqw;font-size:3.4cqw;font-weight:700;display:flex;justify-content:space-between;align-items:flex-end;gap:3cqw}
+.url{font-size:3.2cqw;font-weight:600;overflow-wrap:anywhere;min-width:0}
+.logo{width:15.4cqw;height:auto;flex:0 0 auto}
+</style>
+<div class="track" role="region" aria-label="Carousel: Is your website slow? Five slides">
+  <section class="slide s1" aria-label="Slide 1">
+    <div class="inner">
+      <div class="eyebrow">Website speed</div>
+      <h2>Is your website slow?</h2>
+      <p>Slow pages cost customers. Swipe for the usual causes.</p>
+    </div>
+  </section>
+  <section class="slide s2" aria-label="Slide 2">
+    <div class="inner">
+      <div class="eyebrow">Cause 1</div>
+      <h2>Images nobody resized</h2>
+      <p>A single unoptimized photo can add seconds to load time.</p>
+    </div>
+  </section>
+  <section class="slide s3" aria-label="Slide 3">
+    <div class="inner">
+      <div class="eyebrow">Cause 2</div>
+      <h2>Plugins nobody updated</h2>
+      <p>Old plugins can slow pages and create security gaps.</p>
+    </div>
+  </section>
+  <section class="slide s4" aria-label="Slide 4">
+    <div class="inner">
+      <div class="eyebrow">Cause 3</div>
+      <h2>Too many scripts</h2>
+      <p>Tracking pixels, chat widgets, and sliders add up.</p>
+    </div>
+  </section>
+  <section class="slide plain" aria-label="Slide 5">
+    <div class="inner">
+      <div class="eyebrow">Next step</div>
+      <h2>Check your speed</h2>
+      <p>Read the full guide to the usual causes.</p>
+    </div>
+    <div class="foot">
+      <div class="url">msdigitalsolutions.com/website-speed/</div>
+      <img class="logo" src="msds-logo.png" alt="MS Digital Solutions">
+    </div>
+  </section>
+</div>
+</body>
+</html>
